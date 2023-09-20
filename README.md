@@ -4,7 +4,7 @@
 
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
-##Índice
+## Índice
 *[Título e imagen de portada] (#Título-e-imagen-de-portada)
 *[Shields] (#Insignias)
 *[Índice] (#Índice)
@@ -16,6 +16,6 @@ Este README es una prueba de como utilizar un README en un proyecto GitHub
 
 :construction: Proyecto en construcción :construction:
 
-##Personas desarrolladoras
+## Personas desarrolladoras
 *[Persona 1] Cynthia Tieso
 *[Persona 2] Aquí iría un listado con el resto de personas
