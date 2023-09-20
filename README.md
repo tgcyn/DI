@@ -6,6 +6,8 @@
 
 ## Índice
 *[Título e imagen de portada] (#Título-e-imagen-de-portada)
+*[Título e imagen de portada](#Título-e-imagen-de-portada)
+
 *[Shields] (#Insignias)
 *[Índice] (#Índice)
 *[Descripción del proyecto] (#Descripción-del-proyecto)
