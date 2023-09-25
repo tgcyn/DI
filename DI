@@ -1,0 +1,84 @@
+[33mcommit 97f4bd802c91e1bd40ea7188b7dab9731e5a28a2[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Mon Sep 25 11:58:29 2023 +0200
+
+    Añadido capítulo 3
+
+[33mcommit 1b9fad3e44abc09c609c82b440bab865273c60f0[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Mon Sep 25 11:50:02 2023 +0200
+
+    Añadido capítulo 2
+
+[33mcommit fe909bf308fb198bd73db9e462d0cda6ecef2c97[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Mon Sep 25 11:38:41 2023 +0200
+
+    Añadido capítulo 1
+
+[33mcommit 0c7ad5ceafb5ff9f254fbc938636edb046e2503e[m
+Merge: 82c1d8b ae71aa7
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 10:29:37 2023 +0200
+
+    Merge branch 'main' of github.com:tgcyn/DI
+
+[33mcommit 82c1d8ba8f417d3d5b1a1958228a77f721bc3887[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 09:58:42 2023 +0200
+
+    Añadido capítulo 3 sobre gestión de ramas al índice
+
+[33mcommit ae71aa7fc7f9a24057cf262de769804db4e0c8cc[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 09:58:42 2023 +0200
+
+    Añadido capítulo 3 sobre gestión de ramas
+
+[33mcommit 3c8a1cec29a6cacf09ca1fb052f654725654bdbd[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 09:51:11 2023 +0200
+
+    Añadido índice del libro
+
+[33mcommit a15496e11d21f2c7aa3d6fbd2186773e09e0d7cd[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 09:33:36 2023 +0200
+
+    Probado cosas en el README
+
+[33mcommit 8d1c739bf443f9956bbca36ee96601dfec2c5fe9[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 09:26:25 2023 +0200
+
+    Pruebas en README
+
+[33mcommit 32134cfcbaf5964f285ed4e0172b47075aa22152[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 09:24:36 2023 +0200
+
+    Probando
+
+[33mcommit 7a5079a219e95d6caf64001c75a9b0f26f709535[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 09:20:58 2023 +0200
+
+    Probando README
+
+[33mcommit b70c76bfa3cd45efe9dac3c54f3f3512436b9c93[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Wed Sep 20 09:15:05 2023 +0200
+
+    Segundo commit / Probando cosas
+
+[33mcommit ef989bae0538056133900d4a458166783194cbb4[m
+Author: Cynthia Tieso <ctieso22@fpcoruna.afundacion.org>
+Date:   Tue Sep 19 09:32:59 2023 +0200
+
+    Commit inicial
+
+[33mcommit e6dc773ad32e346345a2dcaa8353e37ba93b534d[m
+Author: tgcyn <145339811+tgcyn@users.noreply.github.com>
+Date:   Tue Sep 19 08:41:53 2023 +0200
+
+    Initial commit
