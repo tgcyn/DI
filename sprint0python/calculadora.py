@@ -20,4 +20,8 @@ while (otro=='s'):
 
     otro = input ('Desea realizar otra operación (s/n): ')
 
+<<<<<<< HEAD
 print('\n\tCerrando programa...')
+=======
+print('\n\tCerrando programa...')
+>>>>>>> b5791c42e1eba597f2b9276855e00115676ac166
