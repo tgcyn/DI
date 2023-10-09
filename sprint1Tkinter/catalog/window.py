@@ -5,7 +5,7 @@ from tkinter import messagebox
 class MainWindow:
     def on_button_click(self, cell):
         message = "Has hecho click en la celda " + cell.title #importo el nombre de la imagen con cell.title
-        messagebox.showinfo("Información: " + message) #para mostrar el mensaje cnd clico en cada celda
+        messagebox.showinfo("Información", message) #para mostrar el mensaje cnd clico en cada celda
 
     def __init__(self,root):
         root.title("Imágenes")
