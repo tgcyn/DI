@@ -1,0 +1,31 @@
+[
+    {
+        "name" : "Cazadores de sombras",
+        "description" : "La historia nos transporta a un mundo secreto poblado por cazadores de sombras, seres mitad ángeles mitad humanos, que protegen a la humanidad de demonios y criaturas sobrenaturales.",
+        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/cazadores.jpg"
+    },
+
+    {
+        "name" : "El corredor del laberinto",
+        "description" : "La historia sigue a Thomas, quien despierta en un lugar llamado 'El Claro' sin recordar su pasado.",
+        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/ecdl.jpg"
+    },
+
+    {
+        "name" : "Harry Potter",
+        "description" : "El huérfano Harry Potter descubre su verdadera herencia como mago el día de su undécimo cumpleaños.",
+        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/harry potter.jpg"
+    },
+
+    {
+        "name" : "Los juegos del hambre",
+        "description" : "Sigue a Katniss Everdeen, una valiente joven que se ofrece como tributo en lugar de su hermana menor en los brutales Juegos del Hambre.",
+        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/ljdh.jpg"
+    },
+
+    {
+        "name" : "Percy Jackson",
+        "description" : "La historia sigue a Percy Jackson, un joven disléxico y con TDAH, quien descubre que es un semidiós, hijo de Poseidón.",
+        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/percy jackson.jpg"
+    }
+]
