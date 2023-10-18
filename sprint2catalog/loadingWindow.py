@@ -1,4 +1,8 @@
 import tkinter as tk
+import threading
+import requests
+from window import MainWindow
+
 
 class loadingWindow:
     def __init__(self,root):
@@ -22,6 +26,10 @@ class loadingWindow:
         self.progress = 0
         self.draw_progress_circle(self.progress)
         self.update_progress_circle()
+
+        #creo un hilo secundario para hacer la peticion de red
+        self.thread = threading.Thread(target=self.fetch_json_data)
+        self.thread.start()
 
 
 #ESTAS DOS FUNCIONES SIRVEN PARA DIBUJAR LA CIRCUNFERENCIA E IR VIENDO SU EVOLUCION
@@ -49,3 +57,19 @@ class loadingWindow:
 
         self.draw_progress_circle(self.progress)
         self.root.after(100, self.update_progress_circle) #vuelve a llamar a la funcion especificada cada los milisegundos especificados (100 y update_progress_circle en este caso)
+    
+
+#AQUI LANZO EL HILO SECUNDARIO
+    #con esto envio el contenido del json a una ventana emerjente 
+    def fetch_json_data(self):
+        response = requests.get("https://raw.githubusercontent.com/tgcyn/DI/main/recursos/catalog.json")
+        if response.status_code == 200:
+            json_data = response.json()
+            launch_main_window(json_data)
+
+    #con esto creo dicha ventana
+def launch_main_window(json_data):
+    root = tk.Tk()
+    app = MainWindow(root,json_data)
+    root.mainloop()
+
