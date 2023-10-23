@@ -14,7 +14,7 @@
     {
         "name" : "Harry Potter",
         "description" : "El huérfano Harry Potter descubre su verdadera herencia como mago el día de su undécimo cumpleaños.",
-        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/harry%20potter.jpg"
+        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/harry_potter.jpg"
     },
 
     {
@@ -26,6 +26,6 @@
     {
         "name" : "Percy Jackson",
         "description" : "La historia sigue a Percy Jackson, un joven disléxico y con TDAH, quien descubre que es un semidiós, hijo de Poseidón.",
-        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/percy%20jackson.jpg"
+        "image_url" : "https://raw.githubusercontent.com/tgcyn/DI/main/recursos/percy_jackson.jpg"
     }
 ]

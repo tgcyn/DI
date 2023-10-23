@@ -6,6 +6,7 @@ from window import MainWindow
 
 class loadingWindow:
     def __init__(self,root):
+        self.finished = False
         self.root = root
         self.root.title("Cargando...")
         self.root.geometry("170x120") #esto es para darle unas dimensiones fijas a la pantalla
@@ -30,6 +31,9 @@ class loadingWindow:
         #creo un hilo secundario para hacer la peticion de red
         self.thread = threading.Thread(target=self.fetch_json_data)
         self.thread.start()
+        if self.thread.is_alive():
+            self.check_Thread()
+
 
 
 #ESTAS DOS FUNCIONES SIRVEN PARA DIBUJAR LA CIRCUNFERENCIA E IR VIENDO SU EVOLUCION
@@ -47,7 +51,7 @@ class loadingWindow:
                                 start=0, extent=angle, tags="progress", outline='green', width=4, style=tk.ARC)
                                 
     def update_progress_circle(self):
-        if self.progress < 90:
+        if self.progress<90:
             self.progress += 10
         else:
             if self.progress>89 and self.progress<=100: #con esto ralentizo el tiempo del ultimo tramo de la circunferencia
@@ -64,9 +68,16 @@ class loadingWindow:
     def fetch_json_data(self):
         response = requests.get("https://raw.githubusercontent.com/tgcyn/DI/main/recursos/catalog.json")
         if response.status_code == 200:
-            json_data = response.json()
-            launch_main_window(json_data)
-
+            self.json_data = response.json()
+            self.finished = True
+    
+    def check_Thread(self):
+        if self.finished:
+            self.root.destroy()
+            launch_main_window(self.json_data)
+        else:
+            self.root.after(100, self.check_Thread)
+    
     #con esto creo dicha ventana
 def launch_main_window(json_data):
     root = tk.Tk()
