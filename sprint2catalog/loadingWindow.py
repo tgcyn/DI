@@ -9,7 +9,16 @@ class loadingWindow:
         self.finished = False
         self.root = root
         self.root.title("Cargando...")
-        self.root.geometry("170x120") #esto es para darle unas dimensiones fijas a la pantalla
+        
+        #ajustar posición de la ventana al centro y darle unas dimensiones
+            #los screen dan las dimensiones de la pantalla
+            #los req dan las dimensiones de la ventana
+        anchura=170
+        altura=120
+        self.root.geometry(f"{anchura}x{altura}") #esto es para darle unas dimensiones fijas a la pantalla
+        x = (self.root.winfo_screenwidth() - anchura)/2
+        y = (self.root.winfo_screenheight() - altura)/2
+        self.root.geometry(f"+{int(x)}+{int(y)}") #con la f indicamos q lo q esta entre llaves se va a tomar por el valor de la variable
         self.root.resizable(False, False) #esto impide q se pueda redimensionar la ventana
 
         #añado un texto para indicar q estoy haciendo

@@ -13,6 +13,16 @@ class MainWindow:
     def __init__(self, root, json_data):
         self.root = root
         root.title("Listado")
+            
+            #ajustar la posición de la ventana al centro
+        anchura=150
+        altura=230
+        self.root.geometry(f"{anchura}x{altura}")
+        x = (self.root.winfo_screenwidth() - anchura)/2
+        y = (self.root.winfo_screenheight() - altura)/2
+        self.root.geometry(f"+{int(x)}+{int(y)}")
+        
+        
         self.datos = [] #creo una lista para ir guardando las celdas
 
         for dato in json_data:
