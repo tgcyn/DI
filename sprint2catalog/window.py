@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import messagebox
 import requests
 from PIL import Image, ImageTk
 from io import BytesIO
@@ -9,6 +10,10 @@ class MainWindow:
     def on_button_click(self, cell):
         root = tk.Toplevel()
         detail_window = Detail_window(root, cell.title, cell.path, cell.description)
+
+    def on_button_clicked(self):
+        mensaje = "Este programa ha sido escrito en python" #este es el mensaje q se va a mostrar al abrir la ventana con el message box
+        messagebox.showinfo("Acerca del desarrollador", mensaje) #al tener una coma, la primero va a ser el nombre de la ventana y lo segundo el mensaje q se mostrara el ella
 
     def __init__(self, root, json_data):
         self.root = root
@@ -21,8 +26,17 @@ class MainWindow:
         x = (self.root.winfo_screenwidth() - anchura)/2
         y = (self.root.winfo_screenheight() - altura)/2
         self.root.geometry(f"+{int(x)}+{int(y)}")
+
+            #crear un menu 
+        barra_menus = tk.Menu() #instancio q va a haber un menu
+       
+        menu_archivo = tk.Menu(barra_menus, tearoff=False) #esto va a ser cada uno de los elementos q van a aparecer en el menu
+        menu_archivo.add_command(label="Acerca de", command=self.on_button_clicked) #aqui le asigno el valor y lo q va a hacer el elemento
         
+        barra_menus.add_cascade(menu=menu_archivo, label="Ayuda") #le doy al menu un nombre y le añado el elemento escrito anteriormente
+        root.config(menu=barra_menus) #esto hace q se visualice dicho menu
         
+            #visualizar las imagenes
         self.datos = [] #creo una lista para ir guardando las celdas
 
         for dato in json_data:
