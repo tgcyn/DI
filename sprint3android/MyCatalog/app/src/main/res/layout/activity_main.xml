@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".CatalogActivity">
 
-    <TextView
+    <!-- EJERCICIO 2 -->
+        <!--wrap_content: hace q el tamaño se ajuste al texto-->
+        <!--parent: es el contenedor, si se usa se ajustara al tamaño del contenedor-->
+        <!--text: hace q en el boton se muestre ese texto-->
+        <!--Start_toStartOf: hace q el inicio (derecha) se empiece en el inicio (derecha) de la pantalla -> si empezamos a leer de derecha a izquierda hará q empiece a la derecha-->
+        <!--End_toEndOf: mismo q el anterior pero con el final-->
+        <!--Horizontal_bias: porcentaje de separacion q quiero q aparezca tomando como referencia Start y End (tienen q estar predefinidos)-->
+        <!--marginTop: separacion q quiero del borde superior del boton al borde del contenedor, en este caso-->
+    <Button
+        android:id="@+id/primerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Navegar al detalle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
