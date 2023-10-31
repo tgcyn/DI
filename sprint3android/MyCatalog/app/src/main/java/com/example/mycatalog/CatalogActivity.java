@@ -27,6 +27,5 @@ public class CatalogActivity extends AppCompatActivity {
                 startActivity(intent); //esto hace q empiece la actividad
             }
         });
-
     }
 }

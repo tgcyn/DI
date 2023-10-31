@@ -6,4 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".DetailActivity">
 
+    <!-- EJERCICIO 3 -->
+        <!--textSize: sirve para darle un valor especifico al texto y q no use el predeterminado -->
+    <TextView
+        android:id="@+id/TW_Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cazadores de sombras"
+        android:textSize="25dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+        <!--width y height: al poner un numero hace q siempre sea ese tamaño, da igual como ajustemos el contenedor -->
+        <!--Top_toBottomOf: hace q el borde superior de la imagen se pegue al borde inferior del elemento especificado -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/Im_Titulo"
+        app:layout_constraintTop_toBottomOf="@id/TW_Titulo"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/cazadores"
+        app:shapeAppearanceOverlay="@style/circleImageView"/>
+
+    <TextView
+        android:id="@+id/TW_Descripcion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="La historia nos transporta a un mundo secreto poblado por cazadores de sombras, seres mitad ángeles mitad humanos, que protegen a la humanidad de demonios y criaturas sobrenaturales."
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/Im_Titulo"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+        android:id="@+id/Button_MeGusta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="25dp"
+        android:text="Me gusta"/>
+
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
