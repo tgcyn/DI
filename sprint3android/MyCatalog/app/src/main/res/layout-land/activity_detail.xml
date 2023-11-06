@@ -10,7 +10,6 @@
         <!--textSize: sirve para darle un valor especifico al texto y q no use el predeterminado -->
         <!--width y height: al poner un numero hace q siempre sea ese tamaño, da igual como ajustemos el contenedor -->
         <!--Top_toBottomOf: hace q el borde superior de la imagen se pegue al borde inferior del elemento especificado -->
-
     <TextView
         android:id="@+id/TW_Titulo"
         android:layout_width="wrap_content"
