@@ -12,12 +12,12 @@
         android:id="@+id/TW_Titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
         android:text="Cazadores de sombras"
-        android:textSize="25dp"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 
         <!--width y height: al poner un numero hace q siempre sea ese tamaño, da igual como ajustemos el contenedor -->
