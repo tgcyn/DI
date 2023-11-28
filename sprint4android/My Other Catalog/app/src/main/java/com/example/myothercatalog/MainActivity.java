@@ -39,9 +39,6 @@ public class MainActivity extends AppCompatActivity {
         showRecyclerView(); //creo un metodo aparte para q este mejor organizado
     }
 
-
-
-
     //en este metodo pongo el request
     private void showRecyclerView() {
         RecyclerView recyclerView = findViewById(R.id.recycler_view);

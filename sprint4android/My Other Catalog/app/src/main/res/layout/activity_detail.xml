@@ -16,11 +16,11 @@
         app:layout_constraintEnd_toEndOf="parent"/-->
 
     <TextView
+        style="@style/Titulo_Clase"
         android:id="@+id/TW_Titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
-        android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
