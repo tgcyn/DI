@@ -7,12 +7,14 @@ import org.json.JSONObject;
 public class Data {
     private String name;
     private String imageUrl;
+    private String descripcion;
 
     public Data(JSONObject json) { //aqui me llega cada elemento del json y yo "filtro" q datos quiero
         //creo una variable para cada dato que quiero mostrar
         try{
             this.name = json.getString("name");
             this.imageUrl = json.getString("image_url");
+            this.descripcion = json.getString("description");
         }catch (JSONException e) {
             e.printStackTrace();
         }
@@ -24,5 +26,8 @@ public class Data {
     }
     public String getImageUrl() {
         return imageUrl;
+    }
+    public String getDescripcion() {
+        return descripcion;
     }
 }
