@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                             try{
                                 JSONObject libro = response.getJSONObject(i); //creo un objeto con la informacion de ese elemento del json
                                 Data data = new Data(libro); //envio el objeto con la informacion para obtener la informacion
-                                allTheBooks.add(data); //gurado la informacion obtenida en la lista q voy a mostrar
+                                allTheBooks.add(data); //guardo la informacion obtenida en la lista q voy a mostrar
                             }catch (JSONException e) {
                                 e.printStackTrace();
                             }

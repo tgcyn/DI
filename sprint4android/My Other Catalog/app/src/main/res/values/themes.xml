@@ -5,5 +5,13 @@
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
+    <style name="CustomTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">#87CEEB</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@android:transition/slide_top</item>
+        <item name="android:windowExitTransition">@android:transition/slide_right</item>
+    </style>
+
     <style name="Theme.MyOtherCatalog" parent="Base.Theme.MyOtherCatalog" />
 </resources>

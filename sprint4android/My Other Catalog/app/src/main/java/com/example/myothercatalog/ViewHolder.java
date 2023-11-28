@@ -39,7 +39,7 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 intent.putExtra("titulo", libro.getName());
                 intent.putExtra("imagen", libro.getImageUrl());
                 intent.putExtra("description", libro.getDescripcion());
-                    //iniciar la actividad enviando los parametros
+                //iniciar la actividad enviando los parametros
                 context.startActivity(intent);
             }
         });
